@@ -5,7 +5,10 @@ spring:
     password: admin123
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
+    generate-ddl: true
+    show-sql: true
     hibernate:
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         
